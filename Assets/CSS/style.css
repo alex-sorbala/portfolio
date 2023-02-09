@@ -1,11 +1,17 @@
 :root{
     --mainColor: rgb(75, 168, 239);
 }
+/*Global parameters*/
 *{
     box-sizing: border-box;
     padding: 10px;
     margin: 1px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
 }
 
 /*Header*/
@@ -20,14 +26,19 @@ header h1{
 nav ul{
     display: flex;
     list-style-type: none;
-    font-size: 35px;
+    font-size: 30px;
     color:azure;
+    margin-top: -5px;
 }
 
 nav{
     padding: 2px;
     margin-right: 20px;
     float: right;
+}
+
+header a{
+    color: black;
 }
 
 /*Hero section*/
@@ -50,21 +61,21 @@ nav{
     font-size: 30px;
 }
 
-/*Main section*/
+/*Main section grid */
 main{
     display: grid;
     grid-template-columns: repeat(5, 1fr, 4fr);
-    grid-template-rows: repeat(10, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     column-gap: 2px;
     row-gap: 2px;
 }
 
 aside{
     display: grid;
-    grid-template-rows: repeat(9);
+    grid-template-rows: repeat(5);
     grid-column-start: 1;
     grid-row-start: 1;
-    grid-row-end: 10;
+    grid-row-end: 6;
 }
 
 main section{
@@ -76,19 +87,19 @@ main section{
 
 .projects{
     grid-row-start: 2;
-    grid-row-end: 8;
+    grid-row-end: 5;
     display: flex;
     flex-wrap: wrap;
 }
 
 .contact{
-    grid-row-start: 8;
-    grid-row-end: 10;
+    grid-row-start: 5;
+    grid-row-end: 6;
 }
 
 aside #work{
     grid-row-start: 2;
-    grid-row-end: 8;
+    grid-row-end: 5;
 }
 
 aside h1{
@@ -99,20 +110,29 @@ aside h1{
 }
 
 /* About me */
+.about{
+    display: flex;
+}
+.about img{         /*profile picture*/
+    width: 175px;
+    height: 217px;
+    border-radius: 20px;
+    border: 1px solid #112b94;
+}
 .about p{
-    font-size: 20px;
+    font-size: 24px;
 }
 
-/*project cards*/
+/*Project cards*/
 .projects div{
     border: 6px solid var(--mainColor);
+    height: 350px;
     margin: 10px;
 }
 
 .projectOne{
     background-image: linear-gradient(rgba(90, 162, 197, 0.5), rgba(90, 162, 197, 0.5)), url("../Images/background_bytes.jpg");
     width: 97%;
-    height: 400px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -120,8 +140,7 @@ aside h1{
 }
 .projectTwo{
     background-image: linear-gradient(rgba(90, 162, 197, 0.5), rgba(90, 162, 197, 0.5)), url("../Images/rocket_project.jpg");
-    width: 500px;
-    height: 350px;
+    width: 31%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -129,8 +148,7 @@ aside h1{
 }
 .projectThree{
     background-image: linear-gradient(rgba(90, 162, 197, 0.5), rgba(90, 162, 197, 0.5)), url("../Images/mushroom.jpg");
-    width: 500px;
-    height: 350px;
+    width: 31%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -138,26 +156,34 @@ aside h1{
 }
 .projectFour{
     background-image: linear-gradient(rgba(90, 162, 197, 0.5), rgba(90, 162, 197, 0.5)), url("../Images/laptop.jpg");
-    width: 500px;
-    height: 350px;
+    width: 31%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
 }
 
+/*making links the same size as the card*/
+.projects div a{ 
+    position: absolute;
+    margin-left: -10px;
+    margin-top: -40px;
+    padding-bottom: 335px;
+    padding-right: 100%;
+}
+
 /*hover action for project cards*/
 .projectOne:hover{
-    background-image: linear-gradient(rgba(90, 162, 197, 0), rgba(90, 162, 197, 0)), url("../Images/background_bytes.jpg");
+    background-image: url("../Images/background_bytes.jpg");
 }
 .projectTwo:hover{
-    background-image: linear-gradient(rgba(90, 162, 197, 0), rgba(90, 162, 197, 0)), url("../Images/rocket_project.jpg");
+    background-image: url("../Images/rocket_project.jpg");
 }
 .projectThree:hover{
-    background-image: linear-gradient(rgba(90, 162, 197, 0), rgba(90, 162, 197, 0)), url("../Images/mushroom.jpg");
+    background-image: url("../Images/mushroom.jpg");
 }
 .projectFour:hover{
-    background-image: linear-gradient(rgba(90, 162, 197, 0), rgba(90, 162, 197, 0)), url("../Images/laptop.jpg");
+    background-image: url("../Images/laptop.jpg");
 }
 
 /* card headers*/
@@ -166,7 +192,8 @@ aside h1{
     background-color: var(--mainColor);
     font-size: 24px;
     position: relative;
-    margin-top: -20px;
+    margin-top: -25px;
+    border: 1px solid #112b94;
 }
 
 /*Contact me*/
@@ -181,10 +208,31 @@ aside h1{
 
 .contact ul li{
     text-align: center;
-    width: 49%;
-    color: black;
+    width: 45%;
 }
 .contact ul li a{
     margin: auto;
     color: black;
+}
+
+aside #contactMe{
+    margin-top: 200px;
+}
+
+/*Media queries*/
+@media screen and (max-width: 1300px) {
+    .projects div{
+        width: 97%;
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    header{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .contact ul li{
+        height: 25%;
+        width: 97%;
+    }
 }
