@@ -131,7 +131,7 @@ aside h1{
 }
 
 .projectOne{
-    background-image: linear-gradient(rgba(90, 162, 197, 0.5), rgba(90, 162, 197, 0.5)), url("../Images/background_bytes.jpg");
+    background-image: linear-gradient(rgba(90, 162, 197, 0.5), rgba(90, 162, 197, 0.5)), url("../Images/20-Classic-Cocktails-To-Order-At-Any-Bar.webp");
     width: 97%;
     background-position: center;
     background-repeat: no-repeat;
@@ -174,7 +174,7 @@ aside h1{
 
 /*hover action for project cards*/
 .projectOne:hover{
-    background-image: url("../Images/background_bytes.jpg");
+    background-image: url("../Images/20-Classic-Cocktails-To-Order-At-Any-Bar.webp");
 }
 .projectTwo:hover{
     background-image: url("../Images/rocket_project.jpg");
