@@ -1,0 +1,13 @@
+/* About me */
+.about{
+    display: flex;
+}
+.about img{         /*profile picture*/
+    width: 175px;
+    height: 217px;
+    border-radius: 20px;
+    border: 1px solid #112b94;
+}
+.about p{
+    font-size: 24px;
+}
