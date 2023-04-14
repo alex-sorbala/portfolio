@@ -1,13 +1,19 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.c2cab247.css",
-    "main.js": "/portfolio/static/js/main.5f7f3826.js",
+    "main.css": "/portfolio/static/css/main.bd2a556f.css",
+    "main.js": "/portfolio/static/js/main.596e82f1.js",
+    "static/media/mushroom.jpg": "/portfolio/static/media/mushroom.48d5b453d956234e7a8f.jpg",
+    "static/media/laptop.jpg": "/portfolio/static/media/laptop.830851674489f1fb9abd.jpg",
+    "static/media/forest_background.jpg": "/portfolio/static/media/forest_background.b1f4ca3e8bb4b26cbf7a.jpg",
+    "static/media/Profile_Picture.jpg": "/portfolio/static/media/Profile_Picture.7972d24d224e0cb2c890.jpg",
+    "static/media/rocket_project.jpg": "/portfolio/static/media/rocket_project.bae9e5dd84ce2c2e66f7.jpg",
+    "static/media/20-Classic-Cocktails-To-Order-At-Any-Bar.webp": "/portfolio/static/media/20-Classic-Cocktails-To-Order-At-Any-Bar.d69f363608fa641ddced.webp",
     "index.html": "/portfolio/index.html",
-    "main.c2cab247.css.map": "/portfolio/static/css/main.c2cab247.css.map",
-    "main.5f7f3826.js.map": "/portfolio/static/js/main.5f7f3826.js.map"
+    "main.bd2a556f.css.map": "/portfolio/static/css/main.bd2a556f.css.map",
+    "main.596e82f1.js.map": "/portfolio/static/js/main.596e82f1.js.map"
   },
   "entrypoints": [
-    "static/css/main.c2cab247.css",
-    "static/js/main.5f7f3826.js"
+    "static/css/main.bd2a556f.css",
+    "static/js/main.596e82f1.js"
   ]
 }
